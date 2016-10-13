@@ -1,0 +1,1770 @@
+==18950== Memcheck, a memory error detector
+==18950== Copyright (C) 2002-2013, and GNU GPL'd, by Julian Seward et al.
+==18950== Using Valgrind-3.10.1 and LibVEX; rerun with -h for copyright info
+==18950== Command: ./snake
+==18950== Parent PID: 10817
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E47F41: wmove (lib_move.c:51)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x401B0E: curse_exit (curse_exit.c:32)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ca6 is 22 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E47F4E: wmove (lib_move.c:51)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x401B0E: curse_exit (curse_exit.c:32)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ca4 is 20 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E47F80: wmove (lib_move.c:55)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x401B0E: curse_exit (curse_exit.c:32)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886cac is 28 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 2
+==18950==    at 0x4E47F84: wmove (lib_move.c:52)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x401B0E: curse_exit (curse_exit.c:32)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ca2 is 18 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 2
+==18950==    at 0x4E47F8A: wmove (lib_move.c:53)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x401B0E: curse_exit (curse_exit.c:32)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ca0 is 16 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 2
+==18950==    at 0x4E47F94: wmove (lib_move.c:56)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x401B0E: curse_exit (curse_exit.c:32)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886cac is 28 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E3E968: waddch_literal (lib_addch.c:245)
+==18950==    by 0x4E3EEA2: waddnstr (lib_addstr.c:69)
+==18950==    by 0x4E4B81A: vwprintw (lib_printw.c:143)
+==18950==    by 0x4E4BC8A: mvwprintw (lib_printw.c:124)
+==18950==    by 0x401B0E: curse_exit (curse_exit.c:32)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ca0 is 16 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E3E96D: waddch_literal (lib_addch.c:244)
+==18950==    by 0x4E3EEA2: waddnstr (lib_addstr.c:69)
+==18950==    by 0x4E4B81A: vwprintw (lib_printw.c:143)
+==18950==    by 0x4E4BC8A: mvwprintw (lib_printw.c:124)
+==18950==    by 0x401B0E: curse_exit (curse_exit.c:32)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ca2 is 18 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 8
+==18950==    at 0x4E3E826: render_char.isra.1 (lib_addch.c:60)
+==18950==    by 0x4E3E976: waddch_literal (lib_addch.c:249)
+==18950==    by 0x4E3EEA2: waddnstr (lib_addstr.c:69)
+==18950==    by 0x4E4B81A: vwprintw (lib_printw.c:143)
+==18950==    by 0x4E4BC8A: mvwprintw (lib_printw.c:124)
+==18950==    by 0x401B0E: curse_exit (curse_exit.c:32)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886cb0 is 32 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 8
+==18950==    at 0x4E3E82F: render_char.isra.1 (lib_addch.c:74)
+==18950==    by 0x4E3E976: waddch_literal (lib_addch.c:249)
+==18950==    by 0x4E3EEA2: waddnstr (lib_addstr.c:69)
+==18950==    by 0x4E4B81A: vwprintw (lib_printw.c:143)
+==18950==    by 0x4E4BC8A: mvwprintw (lib_printw.c:124)
+==18950==    by 0x401B0E: curse_exit (curse_exit.c:32)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886cb8 is 40 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 8
+==18950==    at 0x4E3E982: waddch_literal (lib_addch.c:251)
+==18950==    by 0x4E3EEA2: waddnstr (lib_addstr.c:69)
+==18950==    by 0x4E4B81A: vwprintw (lib_printw.c:143)
+==18950==    by 0x4E4BC8A: mvwprintw (lib_printw.c:124)
+==18950==    by 0x401B0E: curse_exit (curse_exit.c:32)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886cd0 is 64 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E3E986: waddch_literal (lib_addch.c:253)
+==18950==    by 0x4E3EEA2: waddnstr (lib_addstr.c:69)
+==18950==    by 0x4E4B81A: vwprintw (lib_printw.c:143)
+==18950==    by 0x4E4BC8A: mvwprintw (lib_printw.c:124)
+==18950==    by 0x401B0E: curse_exit (curse_exit.c:32)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886d48 is 8 bytes inside a block of size 512 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A30A: _nc_freewin (lib_newwin.c:118)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E3E9D8: waddch_literal (lib_addch.c:253)
+==18950==    by 0x4E3EEA2: waddnstr (lib_addstr.c:69)
+==18950==    by 0x4E4B81A: vwprintw (lib_printw.c:143)
+==18950==    by 0x4E4BC8A: mvwprintw (lib_printw.c:124)
+==18950==    by 0x401B0E: curse_exit (curse_exit.c:32)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886d4a is 10 bytes inside a block of size 512 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A30A: _nc_freewin (lib_newwin.c:118)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 8
+==18950==    at 0x4E3E99D: waddch_literal (lib_addch.c:385)
+==18950==    by 0x4E3EEA2: waddnstr (lib_addstr.c:69)
+==18950==    by 0x4E4B81A: vwprintw (lib_printw.c:143)
+==18950==    by 0x4E4BC8A: mvwprintw (lib_printw.c:124)
+==18950==    by 0x401B0E: curse_exit (curse_exit.c:32)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886d40 is 0 bytes inside a block of size 512 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A30A: _nc_freewin (lib_newwin.c:118)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E3E9B5: waddch_literal (lib_addch.c:397)
+==18950==    by 0x4E3EEA2: waddnstr (lib_addstr.c:69)
+==18950==    by 0x4E4B81A: vwprintw (lib_printw.c:143)
+==18950==    by 0x4E4BC8A: mvwprintw (lib_printw.c:124)
+==18950==    by 0x401B0E: curse_exit (curse_exit.c:32)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ca6 is 22 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 2
+==18950==    at 0x4E3E9C1: waddch_literal (lib_addch.c:400)
+==18950==    by 0x4E3EEA2: waddnstr (lib_addstr.c:69)
+==18950==    by 0x4E4B81A: vwprintw (lib_printw.c:143)
+==18950==    by 0x4E4BC8A: mvwprintw (lib_printw.c:124)
+==18950==    by 0x401B0E: curse_exit (curse_exit.c:32)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ca2 is 18 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 1
+==18950==    at 0x4E51F91: _nc_synchook (lib_window.c:48)
+==18950==    by 0x4E3EE79: waddnstr (lib_addstr.c:74)
+==18950==    by 0x4E4B81A: vwprintw (lib_printw.c:143)
+==18950==    by 0x4E4BC8A: mvwprintw (lib_printw.c:124)
+==18950==    by 0x401B0E: curse_exit (curse_exit.c:32)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886cc6 is 54 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 1
+==18950==    at 0x4E51F9A: _nc_synchook (lib_window.c:50)
+==18950==    by 0x4E3EE79: waddnstr (lib_addstr.c:74)
+==18950==    by 0x4E4B81A: vwprintw (lib_printw.c:143)
+==18950==    by 0x4E4BC8A: mvwprintw (lib_printw.c:124)
+==18950==    by 0x401B0E: curse_exit (curse_exit.c:32)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886cc7 is 55 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E47F41: wmove (lib_move.c:51)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x401874: apple (steve_jobs.c:37)
+==18950==    by 0x400EE4: play (play.c:43)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ca6 is 22 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E47F4E: wmove (lib_move.c:51)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x401874: apple (steve_jobs.c:37)
+==18950==    by 0x400EE4: play (play.c:43)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ca4 is 20 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E47F80: wmove (lib_move.c:55)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x401874: apple (steve_jobs.c:37)
+==18950==    by 0x400EE4: play (play.c:43)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886cac is 28 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 2
+==18950==    at 0x4E47F84: wmove (lib_move.c:52)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x401874: apple (steve_jobs.c:37)
+==18950==    by 0x400EE4: play (play.c:43)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ca2 is 18 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 2
+==18950==    at 0x4E47F8A: wmove (lib_move.c:53)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x401874: apple (steve_jobs.c:37)
+==18950==    by 0x400EE4: play (play.c:43)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ca0 is 16 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 2
+==18950==    at 0x4E47F94: wmove (lib_move.c:56)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x401874: apple (steve_jobs.c:37)
+==18950==    by 0x400EE4: play (play.c:43)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886cac is 28 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E47F41: wmove (lib_move.c:51)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x40189A: apple (steve_jobs.c:38)
+==18950==    by 0x400EE4: play (play.c:43)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886f96 is 22 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E47F4E: wmove (lib_move.c:51)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x40189A: apple (steve_jobs.c:38)
+==18950==    by 0x400EE4: play (play.c:43)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886f94 is 20 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E47F80: wmove (lib_move.c:55)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x40189A: apple (steve_jobs.c:38)
+==18950==    by 0x400EE4: play (play.c:43)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886f9c is 28 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 2
+==18950==    at 0x4E47F84: wmove (lib_move.c:52)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x40189A: apple (steve_jobs.c:38)
+==18950==    by 0x400EE4: play (play.c:43)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886f92 is 18 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 2
+==18950==    at 0x4E47F8A: wmove (lib_move.c:53)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x40189A: apple (steve_jobs.c:38)
+==18950==    by 0x400EE4: play (play.c:43)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886f90 is 16 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 2
+==18950==    at 0x4E47F94: wmove (lib_move.c:56)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x40189A: apple (steve_jobs.c:38)
+==18950==    by 0x400EE4: play (play.c:43)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886f9c is 28 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 4
+==18950==    at 0x401333: aff_all (snake_body.c:45)
+==18950==    by 0x400F20: play (play.c:44)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x585a040 is 0 bytes inside a block of size 16 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x401A9B: free_list (curse_exit.c:21)
+==18950==    by 0x401AD6: curse_exit (curse_exit.c:29)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 4
+==18950==    at 0x401339: aff_all (snake_body.c:45)
+==18950==    by 0x400F20: play (play.c:44)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x585a044 is 4 bytes inside a block of size 16 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x401A9B: free_list (curse_exit.c:21)
+==18950==    by 0x401AD6: curse_exit (curse_exit.c:29)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E47F41: wmove (lib_move.c:51)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x401351: aff_all (snake_body.c:45)
+==18950==    by 0x400F20: play (play.c:44)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ca6 is 22 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E47F4E: wmove (lib_move.c:51)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x401351: aff_all (snake_body.c:45)
+==18950==    by 0x400F20: play (play.c:44)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ca4 is 20 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E47F80: wmove (lib_move.c:55)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x401351: aff_all (snake_body.c:45)
+==18950==    by 0x400F20: play (play.c:44)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886cac is 28 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 2
+==18950==    at 0x4E47F84: wmove (lib_move.c:52)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x401351: aff_all (snake_body.c:45)
+==18950==    by 0x400F20: play (play.c:44)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ca2 is 18 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 2
+==18950==    at 0x4E47F8A: wmove (lib_move.c:53)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x401351: aff_all (snake_body.c:45)
+==18950==    by 0x400F20: play (play.c:44)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ca0 is 16 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 2
+==18950==    at 0x4E47F94: wmove (lib_move.c:56)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x401351: aff_all (snake_body.c:45)
+==18950==    by 0x400F20: play (play.c:44)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886cac is 28 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 8
+==18950==    at 0x401356: aff_all (snake_body.c:46)
+==18950==    by 0x400F20: play (play.c:44)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x585a048 is 8 bytes inside a block of size 16 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x401A9B: free_list (curse_exit.c:21)
+==18950==    by 0x401AD6: curse_exit (curse_exit.c:29)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E47F41: wmove (lib_move.c:51)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x40138A: aff_all (snake_body.c:48)
+==18950==    by 0x400F20: play (play.c:44)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886f96 is 22 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E47F4E: wmove (lib_move.c:51)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x40138A: aff_all (snake_body.c:48)
+==18950==    by 0x400F20: play (play.c:44)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886f94 is 20 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E47F80: wmove (lib_move.c:55)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x40138A: aff_all (snake_body.c:48)
+==18950==    by 0x400F20: play (play.c:44)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886f9c is 28 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 2
+==18950==    at 0x4E47F84: wmove (lib_move.c:52)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x40138A: aff_all (snake_body.c:48)
+==18950==    by 0x400F20: play (play.c:44)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886f92 is 18 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 2
+==18950==    at 0x4E47F8A: wmove (lib_move.c:53)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x40138A: aff_all (snake_body.c:48)
+==18950==    by 0x400F20: play (play.c:44)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886f90 is 16 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 2
+==18950==    at 0x4E47F94: wmove (lib_move.c:56)
+==18950==    by 0x4E4BC51: mvwprintw (lib_printw.c:122)
+==18950==    by 0x40138A: aff_all (snake_body.c:48)
+==18950==    by 0x400F20: play (play.c:44)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886f9c is 28 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 8
+==18950==    at 0x4E3E910: render_char.isra.1 (lib_addch.c:67)
+==18950==    by 0x4E3E976: waddch_literal (lib_addch.c:249)
+==18950==    by 0x4E3EEA2: waddnstr (lib_addstr.c:69)
+==18950==    by 0x4E4B81A: vwprintw (lib_printw.c:143)
+==18950==    by 0x4E4BC8A: mvwprintw (lib_printw.c:124)
+==18950==    by 0x40138A: aff_all (snake_body.c:48)
+==18950==    by 0x400F20: play (play.c:44)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886fa8 is 40 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 1
+==18950==    at 0x4E4BE8A: wnoutrefresh (lib_refresh.c:98)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886cac is 28 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 8
+==18950==    at 0x4E4BEAB: wnoutrefresh (lib_refresh.c:112)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886cb8 is 40 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E4BEB2: wnoutrefresh (lib_refresh.c:109)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886caa is 26 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E4BEB7: wnoutrefresh (lib_refresh.c:110)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ca8 is 24 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 8
+==18950==    at 0x4E4BECA: wnoutrefresh (lib_refresh.c:113)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886cb0 is 32 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 8
+==18950==    at 0x4E520E0: wsyncdown (lib_window.c:131)
+==18950==    by 0x4E4BED6: wnoutrefresh (lib_refresh.c:116)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ce8 is 88 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E520F5: wsyncdown (lib_window.c:144)
+==18950==    by 0x4E4BED6: wnoutrefresh (lib_refresh.c:116)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ca4 is 20 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 4
+==18950==    at 0x4E52104: wsyncdown (lib_window.c:145)
+==18950==    by 0x4E4BED6: wnoutrefresh (lib_refresh.c:116)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ce0 is 80 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 4
+==18950==    at 0x4E52137: wsyncdown (lib_window.c:148)
+==18950==    by 0x4E4BED6: wnoutrefresh (lib_refresh.c:116)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886cdc is 76 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 8
+==18950==    at 0x4E5213E: wsyncdown (lib_window.c:146)
+==18950==    by 0x4E4BED6: wnoutrefresh (lib_refresh.c:116)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886cd0 is 64 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E5214C: wsyncdown (lib_window.c:155)
+==18950==    by 0x4E4BED6: wnoutrefresh (lib_refresh.c:116)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886d48 is 8 bytes inside a block of size 512 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A30A: _nc_freewin (lib_newwin.c:118)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E52154: wsyncdown (lib_window.c:153)
+==18950==    by 0x4E4BED6: wnoutrefresh (lib_refresh.c:116)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ca6 is 22 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E5216D: wsyncdown (lib_window.c:155)
+==18950==    by 0x4E4BED6: wnoutrefresh (lib_refresh.c:116)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886d4a is 10 bytes inside a block of size 512 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A30A: _nc_freewin (lib_newwin.c:118)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E4BEDB: wnoutrefresh (lib_refresh.c:146)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ca6 is 22 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E4BEDF: wnoutrefresh (lib_refresh.c:136)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886cac is 28 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E4BEE4: wnoutrefresh (lib_refresh.c:152)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ca4 is 20 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E4BEFC: wnoutrefresh (lib_refresh.c:151)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886cfc is 108 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 8
+==18950==    at 0x4E4BF27: wnoutrefresh (lib_refresh.c:260)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886cd0 is 64 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E4BF40: wnoutrefresh (lib_refresh.c:157)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886d48 is 8 bytes inside a block of size 512 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A30A: _nc_freewin (lib_newwin.c:118)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E4BF4F: wnoutrefresh (lib_refresh.c:158)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886d4a is 10 bytes inside a block of size 512 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A30A: _nc_freewin (lib_newwin.c:118)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 8
+==18950==    at 0x4E4BF67: wnoutrefresh (lib_refresh.c:257)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886d40 is 0 bytes inside a block of size 512 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A30A: _nc_freewin (lib_newwin.c:118)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 2
+==18950==    at 0x4E4BFED: wnoutrefresh (lib_refresh.c:275)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886d4a is 10 bytes inside a block of size 512 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A30A: _nc_freewin (lib_newwin.c:118)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 2
+==18950==    at 0x4E4BFF4: wnoutrefresh (lib_refresh.c:275)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886d48 is 8 bytes inside a block of size 512 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A30A: _nc_freewin (lib_newwin.c:118)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 1
+==18950==    at 0x4E4C012: wnoutrefresh (lib_refresh.c:279)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886cc1 is 49 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 1
+==18950==    at 0x4E4C020: wnoutrefresh (lib_refresh.c:284)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886cc2 is 50 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E4C02D: wnoutrefresh (lib_refresh.c:285)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ca8 is 24 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E4C031: wnoutrefresh (lib_refresh.c:285)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ca0 is 16 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E4C038: wnoutrefresh (lib_refresh.c:287)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886caa is 26 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E4C03C: wnoutrefresh (lib_refresh.c:287)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886ca2 is 18 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 1
+==18950==    at 0x4E4C0FF: wrefresh (lib_refresh.c:63)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886cc1 is 49 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 1
+==18950==    at 0x4E4C119: wrefresh (lib_refresh.c:72)
+==18950==    by 0x400F2C: play (play.c:45)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886cc1 is 49 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 1
+==18950==    at 0x4E4BE8A: wnoutrefresh (lib_refresh.c:98)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886f9c is 28 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 8
+==18950==    at 0x4E4BEAB: wnoutrefresh (lib_refresh.c:112)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886fa8 is 40 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E4BEB2: wnoutrefresh (lib_refresh.c:109)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886f9a is 26 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E4BEB7: wnoutrefresh (lib_refresh.c:110)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886f98 is 24 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 8
+==18950==    at 0x4E4BECA: wnoutrefresh (lib_refresh.c:113)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886fa0 is 32 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 8
+==18950==    at 0x4E520E0: wsyncdown (lib_window.c:131)
+==18950==    by 0x4E4BED6: wnoutrefresh (lib_refresh.c:116)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886fd8 is 88 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E520F5: wsyncdown (lib_window.c:144)
+==18950==    by 0x4E4BED6: wnoutrefresh (lib_refresh.c:116)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886f94 is 20 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 4
+==18950==    at 0x4E52104: wsyncdown (lib_window.c:145)
+==18950==    by 0x4E4BED6: wnoutrefresh (lib_refresh.c:116)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886fd0 is 80 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 4
+==18950==    at 0x4E52137: wsyncdown (lib_window.c:148)
+==18950==    by 0x4E4BED6: wnoutrefresh (lib_refresh.c:116)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886fcc is 76 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 8
+==18950==    at 0x4E5213E: wsyncdown (lib_window.c:146)
+==18950==    by 0x4E4BED6: wnoutrefresh (lib_refresh.c:116)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886fc0 is 64 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E5214C: wsyncdown (lib_window.c:155)
+==18950==    by 0x4E4BED6: wnoutrefresh (lib_refresh.c:116)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5887038 is 8 bytes inside a block of size 48 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A30A: _nc_freewin (lib_newwin.c:118)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E52154: wsyncdown (lib_window.c:153)
+==18950==    by 0x4E4BED6: wnoutrefresh (lib_refresh.c:116)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886f96 is 22 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E5216D: wsyncdown (lib_window.c:155)
+==18950==    by 0x4E4BED6: wnoutrefresh (lib_refresh.c:116)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x588703a is 10 bytes inside a block of size 48 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A30A: _nc_freewin (lib_newwin.c:118)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E4BEDB: wnoutrefresh (lib_refresh.c:146)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886f96 is 22 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E4BEDF: wnoutrefresh (lib_refresh.c:136)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886f9c is 28 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E4BEE4: wnoutrefresh (lib_refresh.c:152)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886f94 is 20 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E4BEFC: wnoutrefresh (lib_refresh.c:151)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886fec is 108 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 8
+==18950==    at 0x4E4BF27: wnoutrefresh (lib_refresh.c:260)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886fc0 is 64 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E4BF40: wnoutrefresh (lib_refresh.c:157)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5887038 is 8 bytes inside a block of size 48 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A30A: _nc_freewin (lib_newwin.c:118)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 2
+==18950==    at 0x4E4BF4F: wnoutrefresh (lib_refresh.c:158)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x588703a is 10 bytes inside a block of size 48 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A30A: _nc_freewin (lib_newwin.c:118)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 8
+==18950==    at 0x4E4BF67: wnoutrefresh (lib_refresh.c:257)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5887030 is 0 bytes inside a block of size 48 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A30A: _nc_freewin (lib_newwin.c:118)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 2
+==18950==    at 0x4E4BFED: wnoutrefresh (lib_refresh.c:275)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x588703a is 10 bytes inside a block of size 48 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A30A: _nc_freewin (lib_newwin.c:118)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 2
+==18950==    at 0x4E4BFF4: wnoutrefresh (lib_refresh.c:275)
+==18950==    by 0x4E4C0FA: wrefresh (lib_refresh.c:62)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5887038 is 8 bytes inside a block of size 48 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A30A: _nc_freewin (lib_newwin.c:118)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== 
+==18950== More than 100 errors detected.  Subsequent errors
+==18950== will still be recorded, but in less detail than before.
+==18950== Invalid read of size 1
+==18950==    at 0x4E4C0FF: wrefresh (lib_refresh.c:63)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886fb1 is 49 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 1
+==18950==    at 0x4E4C119: wrefresh (lib_refresh.c:72)
+==18950==    by 0x400F38: play (play.c:46)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886fb1 is 49 bytes inside a block of size 112 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A314: _nc_freewin (lib_newwin.c:119)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AEE: curse_exit (curse_exit.c:31)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 4
+==18950==    at 0x40197C: c_wall (colision.c:15)
+==18950==    by 0x401A49: collision (colision.c:38)
+==18950==    by 0x401643: direction (direction.c:51)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x585a040 is 0 bytes inside a block of size 16 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x401A9B: free_list (curse_exit.c:21)
+==18950==    by 0x401AD6: curse_exit (curse_exit.c:29)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 4
+==18950==    at 0x401986: c_wall (colision.c:15)
+==18950==    by 0x401A49: collision (colision.c:38)
+==18950==    by 0x401643: direction (direction.c:51)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x585a040 is 0 bytes inside a block of size 16 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x401A9B: free_list (curse_exit.c:21)
+==18950==    by 0x401AD6: curse_exit (curse_exit.c:29)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 4
+==18950==    at 0x40199A: c_wall (colision.c:17)
+==18950==    by 0x401A49: collision (colision.c:38)
+==18950==    by 0x401643: direction (direction.c:51)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x585a044 is 4 bytes inside a block of size 16 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x401A9B: free_list (curse_exit.c:21)
+==18950==    by 0x401AD6: curse_exit (curse_exit.c:29)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 4
+==18950==    at 0x4019A5: c_wall (colision.c:17)
+==18950==    by 0x401A49: collision (colision.c:38)
+==18950==    by 0x401643: direction (direction.c:51)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x585a044 is 4 bytes inside a block of size 16 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x401A9B: free_list (curse_exit.c:21)
+==18950==    by 0x401AD6: curse_exit (curse_exit.c:29)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 8
+==18950==    at 0x401A08: c_body (colision.c:27)
+==18950==    by 0x401A5A: collision (colision.c:38)
+==18950==    by 0x401643: direction (direction.c:51)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x585a048 is 8 bytes inside a block of size 16 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x401A9B: free_list (curse_exit.c:21)
+==18950==    by 0x401AD6: curse_exit (curse_exit.c:29)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 4
+==18950==    at 0x4019D3: c_body (colision.c:29)
+==18950==    by 0x401A5A: collision (colision.c:38)
+==18950==    by 0x401643: direction (direction.c:51)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x585a040 is 0 bytes inside a block of size 16 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x401A9B: free_list (curse_exit.c:21)
+==18950==    by 0x401AD6: curse_exit (curse_exit.c:29)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 4
+==18950==    at 0x4019D9: c_body (colision.c:29)
+==18950==    by 0x401A5A: collision (colision.c:38)
+==18950==    by 0x401643: direction (direction.c:51)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x585a040 is 0 bytes inside a block of size 16 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x401A9B: free_list (curse_exit.c:21)
+==18950==    by 0x401AD6: curse_exit (curse_exit.c:29)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 8
+==18950==    at 0x401AA8: free_list (curse_exit.c:18)
+==18950==    by 0x401AD6: curse_exit (curse_exit.c:29)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x585a048 is 8 bytes inside a block of size 16 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x401A9B: free_list (curse_exit.c:21)
+==18950==    by 0x401AD6: curse_exit (curse_exit.c:29)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 8
+==18950==    at 0x401A88: free_list (curse_exit.c:20)
+==18950==    by 0x401AD6: curse_exit (curse_exit.c:29)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x585a048 is 8 bytes inside a block of size 16 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x401A9B: free_list (curse_exit.c:21)
+==18950==    by 0x401AD6: curse_exit (curse_exit.c:29)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid free() / delete / delete[] / realloc()
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x401A9B: free_list (curse_exit.c:21)
+==18950==    by 0x401AD6: curse_exit (curse_exit.c:29)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x585a040 is 0 bytes inside a block of size 16 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x401A9B: free_list (curse_exit.c:21)
+==18950==    by 0x401AD6: curse_exit (curse_exit.c:29)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid free() / delete / delete[] / realloc()
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x401ABC: free_list (curse_exit.c:24)
+==18950==    by 0x401AD6: curse_exit (curse_exit.c:29)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x585a090 is 0 bytes inside a block of size 16 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x401ABC: free_list (curse_exit.c:24)
+==18950==    by 0x401AD6: curse_exit (curse_exit.c:29)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 2
+==18950==    at 0x4E3EA50: waddch_literal (lib_addch.c:253)
+==18950==    by 0x4E3EEA2: waddnstr (lib_addstr.c:69)
+==18950==    by 0x4E4B81A: vwprintw (lib_printw.c:143)
+==18950==    by 0x4E4BC8A: mvwprintw (lib_printw.c:124)
+==18950==    by 0x401B0E: curse_exit (curse_exit.c:32)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886d4a is 10 bytes inside a block of size 512 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A30A: _nc_freewin (lib_newwin.c:118)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 2
+==18950==    at 0x4E3EA54: waddch_literal (lib_addch.c:253)
+==18950==    by 0x4E3EEA2: waddnstr (lib_addstr.c:69)
+==18950==    by 0x4E4B81A: vwprintw (lib_printw.c:143)
+==18950==    by 0x4E4BC8A: mvwprintw (lib_printw.c:124)
+==18950==    by 0x401B0E: curse_exit (curse_exit.c:32)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886d48 is 8 bytes inside a block of size 512 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A30A: _nc_freewin (lib_newwin.c:118)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid write of size 2
+==18950==    at 0x4E3E9E1: waddch_literal (lib_addch.c:253)
+==18950==    by 0x4E3EEA2: waddnstr (lib_addstr.c:69)
+==18950==    by 0x4E4B81A: vwprintw (lib_printw.c:143)
+==18950==    by 0x4E4BC8A: mvwprintw (lib_printw.c:124)
+==18950==    by 0x401B0E: curse_exit (curse_exit.c:32)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x5886d4a is 10 bytes inside a block of size 512 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x4E4A30A: _nc_freewin (lib_newwin.c:118)
+==18950==    by 0x4E41117: delwin (lib_delwin.c:88)
+==18950==    by 0x401AE2: curse_exit (curse_exit.c:30)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== Invalid read of size 4
+==18950==    at 0x4018AD: apple (steve_jobs.c:41)
+==18950==    by 0x400EE4: play (play.c:43)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950==  Address 0x585a040 is 0 bytes inside a block of size 16 free'd
+==18950==    at 0x4C2BDEC: free (in /usr/lib/valgrind/vgpreload_memcheck-amd64-linux.so)
+==18950==    by 0x401A9B: free_list (curse_exit.c:21)
+==18950==    by 0x401AD6: curse_exit (curse_exit.c:29)
+==18950==    by 0x401793: direction (direction.c:62)
+==18950==    by 0x400EB0: play (play.c:42)
+==18950==    by 0x400C7D: main (main.c:33)
+==18950== 
+==18950== 
+==18950== HEAP SUMMARY:
+==18950==     in use at exit: 180,881 bytes in 432 blocks
+==18950==   total heap usage: 500 allocs, 592 frees, 187,092 bytes allocated
+==18950== 
+==18950== LEAK SUMMARY:
+==18950==    definitely lost: 0 bytes in 0 blocks
+==18950==    indirectly lost: 0 bytes in 0 blocks
+==18950==      possibly lost: 0 bytes in 0 blocks
+==18950==    still reachable: 180,881 bytes in 432 blocks
+==18950==         suppressed: 0 bytes in 0 blocks
+==18950== Rerun with --leak-check=full to see details of leaked memory
+==18950== 
+==18950== For counts of detected and suppressed errors, rerun with: -v
+==18950== ERROR SUMMARY: 106507 errors from 117 contexts (suppressed: 0 from 0)
